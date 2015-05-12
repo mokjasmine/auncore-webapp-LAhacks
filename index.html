@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto+Slab|Oxygen:400,700">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="static/app/index.js"></script>
+        <script src="static/app/fb.js"></script>
+        {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'app/index.css' %}" />
+        
+        <title>auncore</title>
+    </head>
+    
+    <body>
+        <div class="background-fluid">
+            <div class="nav">
+                <ul>
+                    <li><a id="description">Description</a></li>
+                    <li><a id="login">Login</a></li>
+                    <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                </ul>
+            </div>
+            <p class="logo">auncore</p>
+            <p class="motto">Go to concerts. Connect with friends. Have fun.</p>
+        </div>
+        <!--<h2><a href="{% url 'login' %}">log in</a></h2>
+        <h2><a href="{% url 'dashboard' %}">dashboard</a></h2>-->
+        <div class="descript">
+            <p class="description-title">How It Works</p>
+            <p class="description-main"><strong>auncore</strong> is a social networking platform that allows music lovers to achieve the 
+                ultimate concert experience.</p>
+            <p class="description-content">Discover what concerts your friends are going to and share what concerts you'll be attending
+                by simply connecting your email and Facebook accounts. 
+                Using ticket confirmation emails from your inbox, <strong> auncore </strong> retrieves data about the upcoming concerts you're going to
+                and shares this information with your Facebook friends.  </p>
+        </div>
+        <div class="background-login">
+        <div id="signup">
+            <p>Sign Up</p>
+            <div class="fb-login-button">
+                <fb:login-button scope="public_profile,email,user_friends" onlogin="checkLoginState();">
+                </fb:login-button>
+            </div>
+            
+            <div id="status">
+        </div>
+            <div
+              class="fb-like"
+              data-share="true"
+              data-width="450"
+              data-show-faces="true">
+            </div>
+        </div>
+        
+        </div>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+.background-fluid {
+    height: 17vh;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background-size: cover;
+    z-index: 0;
+    display: block;
+    position: relative;
+}
+
+.background-fluid::after {
+    content: "";
+    background: url(/static/app/artistic_geometric_background.jpg);
+    background-size: cover;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+.logo {
+    z-index:1;
+    float:left;
+    text-align:left;
+    padding-left:3%;
+    font-size:70px;
+    font-family: "Roboto Slab", serif;
+    color:white;
+}
+
+.home {
+    font-size:18px;
+	font-family: "Oxygen", serif;
+	padding-right:5%;
+	float:right;
+}
+
+.title {
+	z-index:1;
+    float:left;
+    text-align:left;
+    padding-left:3%;
+    padding-top:2%;
+    font-size:50px;
+    font-family: "Roboto Slab", serif;
+    color:black;
+}
+
+.content {
+	width:90%;
+	float:center;
+}
+
+table {
+	float:center;
+	position:relative;
+	margin:auto;
+	text-align:left;
+	display:inline-block;
+	margin-left:10%;
+}
+
+table tr {
+    background-color:#ddebee;
+	border-bottom:15px solid white;
+}
+
+table td {
+	height:auto;
+	width:500px;
+	text-align:top;
+	padding:30px;
+}
+
+table td img {
+	width:300px;
+	height:auto;
+}
+
+.artist {
+    font-family:Oxygen;
+    font-size:30px;
+}
+
+.location {
+    font-family:Oxygen;
+    font-size:20px;
+}
+
+.date {
+    font-family:Oxygen;
+    font-size:18px;
+}
+
+.facebook-friends-attending {
+	font-family:Oxygen;
+    font-size:18px;
+}
+
+a {
+	display: block;
+	width: 120px;
+	padding: 15px;
+	color: white;
+}
+
+a:link {
+	padding: 15px;
+	text-decoration:none;
+	color: white;
+}
+
+a:visited {
+	text-decoration:none;
+	color:white;
+}
+
+a:hover {
+	padding: 15px;
+	color:white;
+	text-decoration:none;
+}
